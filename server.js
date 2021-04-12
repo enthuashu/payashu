@@ -16,6 +16,7 @@ app.use(express.urlencoded({extended:false}));
 const staticPath=path.join(__dirname,"public");
 app.use(express.static(staticPath));
 
+
 app.get("/",(req,res)=>{
     res.sendFile(__dirname + "/index.html");
 })
